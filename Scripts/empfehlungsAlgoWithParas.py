@@ -2,15 +2,13 @@ import os
 import json
 import pandas as pd
 from sklearn.metrics.pairwise import cosine_similarity
-from sklearn.decomposition import TruncatedSVD
-from sklearn.preprocessing import StandardScaler
 
 # Parameters
-USER_PROFILE_FILENAME = "Schiller.json"  # profile name
-NUM_RECOMMENDATIONS = 30
+USER_PROFILE_FILENAME = "Carlos.json"  # profile name
+NUM_RECOMMENDATIONS = 15
 POPULARITY_FILTER = 'popular'  # Options: 'all', 'popular', 'niche'
-POPULAR_THRESHOLD = 2000000  # Number of owners to classify as popular
-REVIEW_RATIO_THRESHOLD = 0.6  # Minimum positive review ratio required
+POPULAR_THRESHOLD = 1000000  # Number of owners to classify as popular
+REVIEW_RATIO_THRESHOLD = 0.85  # Minimum positive review ratio required
 LIBRARY_FOLDER = "./userProfiles"
 GAME_CATALOG_PATH = "./game_catalog_extended.csv"
 COMBINED_LIBRARY_PATH = "./combined_libraries.csv"
@@ -29,12 +27,7 @@ def convert_owners_to_numeric(owners_str):
 
 game_catalog['owners'] = game_catalog['owners'].apply(convert_owners_to_numeric)
 
-# Print the columns to verify the presence of the 'tags' column
-#print("Columns in game_catalog:", game_catalog.columns)
-
 # Function to calculate cosine similarity
-# Cosine similarity measures the cosine of the angle between two vectors.
-# In this context, it is used to measure the similarity between the user's profile tags and the game's tags.
 def calculate_similarity(profile_tags, game_tags):
     profile_vector = []
     game_vector = []
@@ -50,36 +43,33 @@ def calculate_similarity(profile_tags, game_tags):
     # Calculate cosine similarity
     return cosine_similarity([profile_vector], [game_vector])[0][0]
 
-# Function to perform collaborative filtering
-# Collaborative filtering recommends items (games) based on the preferences of similar users.
-# In this context, it uses SVD (Singular Value Decomposition) to reduce dimensionality and find similar users based on their playtime data.
-def collaborative_filtering(user_profile_name, combined_library, num_recommendations=NUM_RECOMMENDATIONS):
-    # Create a pivot table for user-game playtime
-    user_game_matrix = combined_library.pivot_table(index='Benutzer', columns='Spiel', values='SpielzeitInStunden', fill_value=0)
+# Function to perform collaborative filtering and determine cluster
+def collaborative_filtering(user_profile_name, combined_library):
+    # Load user profile
+    user_profile_path = os.path.join(LIBRARY_FOLDER, f"{user_profile_name}.json")
+    with open(user_profile_path, 'r') as profile_file:
+        user_profile = json.load(profile_file)
     
-    # Normalize the data
-    scaler = StandardScaler()
-    user_game_matrix_normalized = scaler.fit_transform(user_game_matrix)
+    # Determine the most played genre for each user
+    user_genres = combined_library.groupby('Benutzer')['Genre'].apply(lambda x: ','.join(x.dropna())).reset_index()
     
-    # Apply SVD
-    svd = TruncatedSVD(n_components=20)
-    user_game_matrix_svd = svd.fit_transform(user_game_matrix_normalized)
+    def get_top_genre(genres_dict):
+        return max(genres_dict, key=genres_dict.get)
     
-    # Print index for debugging
-    #print(f"Available users in matrix: {user_game_matrix.index.tolist()}")
-    print(f"Searching for user: {user_profile_name}")
+    user_genres['Top1'] = user_genres['Benutzer'].apply(lambda user: get_top_genre(user_profile['Genres']))
     
-    # Get the user's index
-    user_index = user_game_matrix.index.get_loc(user_profile_name)
+    #print("Top genres for users:")
+    #print(user_genres.head())
     
-    # Compute similarities
-    user_similarity = cosine_similarity(user_game_matrix_svd[user_index].reshape(1, -1), user_game_matrix_svd).flatten()
+    combined_library = combined_library.merge(user_genres[['Benutzer', 'Top1']], on='Benutzer', how='left')
     
-    # Get similar users and their games
-    similar_users = user_similarity.argsort()[::-1][1:num_recommendations+1]
-    recommendations = user_game_matrix.iloc[similar_users].mean().sort_values(ascending=False).head(num_recommendations)
+    # Create clusters based on the top genre
+    primary_genres = user_genres['Top1'].unique()
+    genre_clusters = {genre: idx for idx, genre in enumerate(primary_genres)}
     
-    return recommendations.index.tolist()
+    combined_library['Cluster'] = combined_library['Top1'].map(genre_clusters)
+    
+    return combined_library, genre_clusters
 
 # Generate recommendations
 def recommend_games(user_profile_path, game_catalog, combined_library, num_recommendations=NUM_RECOMMENDATIONS, popularity_filter=POPULARITY_FILTER, review_ratio_threshold=REVIEW_RATIO_THRESHOLD):
@@ -90,19 +80,18 @@ def recommend_games(user_profile_path, game_catalog, combined_library, num_recom
     total_games = 0
     skipped_games = 0
     
-    print("Processing Games.")
+    owned_games = set(game[0] for game in user_profile.get('OwnedGames', []))
+    
     for _, game in game_catalog.iterrows():
         total_games += 1
+        if game['name'] in owned_games:
+            continue
         try:
             game_tags = eval(game['tags'])  # Convert the string back to a dictionary
             if not isinstance(game_tags, dict):
                 raise ValueError("Game tags is not a dictionary.")
         except Exception as e:
             skipped_games += 1
-            continue
-        
-        # Skip games already owned by the user
-        if game['name'] in user_profile.get('OwnedGames', []):
             continue
         
         similarity = calculate_similarity(user_profile['Tags'], game_tags)
@@ -119,23 +108,30 @@ def recommend_games(user_profile_path, game_catalog, combined_library, num_recom
     
     # Apply popularity filter
     if popularity_filter == 'popular':
-        recommendations = [rec for rec in recommendations if rec[2] > POPULAR_THRESHOLD]  # Assuming owners > POPULAR_THRESHOLD is popular
+        recommendations = [rec for rec in recommendations if rec[2] > POPULAR_THRESHOLD]
     elif popularity_filter == 'niche':
-        recommendations = [rec for rec in recommendations if rec[2] < POPULAR_THRESHOLD]  # Assuming owners < POPULAR_THRESHOLD is niche
+        recommendations = [rec for rec in recommendations if rec[2] < POPULAR_THRESHOLD]
     
     # Extract user profile name from path
     user_profile_name = os.path.splitext(os.path.basename(user_profile_path))[0]
     
     # Collaborative filtering recommendations
-    collab_recommendations = collaborative_filtering(user_profile_name, combined_library, num_recommendations)
+    combined_library, genre_clusters = collaborative_filtering(user_profile_name, combined_library)
     
-    # Combine both recommendations
-    combined_recommendations = recommendations[:num_recommendations] + collab_recommendations
+    user_cluster = combined_library[combined_library['Benutzer'] == user_profile_name]['Cluster'].iloc[0]
+    
+    cluster_recommendations = combined_library[combined_library['Cluster'] == user_cluster]
+    
+    cluster_genre = combined_library[combined_library['Benutzer'] == user_profile_name]['Top1'].iloc[0]
+    
+    cluster_recommendations = cluster_recommendations[~cluster_recommendations['Spiel'].isin(owned_games)]
+    
+    combined_recommendations = recommendations[:num_recommendations] + list(cluster_recommendations['Spiel'].unique())
     
     print(f"Total games processed: {total_games}")
     print(f"Games skipped due to invalid tags: {skipped_games}")
     
-    return combined_recommendations[:num_recommendations]
+    return combined_recommendations[:num_recommendations], cluster_genre
 
 # Directory containing user profiles
 user_profiles_folder = LIBRARY_FOLDER
@@ -148,14 +144,19 @@ combined_library = pd.read_csv(COMBINED_LIBRARY_PATH)
 user_profile_path = os.path.join(user_profiles_folder, USER_PROFILE_FILENAME)
 
 if os.path.isfile(user_profile_path):
-    recommendations = recommend_games(user_profile_path, game_catalog, combined_library, NUM_RECOMMENDATIONS, POPULARITY_FILTER, REVIEW_RATIO_THRESHOLD)
+    print(f"Analyzing user profile: {os.path.splitext(os.path.basename(user_profile_path))[0]}")
+    recommendations, cluster_genre = recommend_games(user_profile_path, game_catalog, combined_library, NUM_RECOMMENDATIONS, POPULARITY_FILTER, REVIEW_RATIO_THRESHOLD)
     
     print("Recommended Games:")
-    print(f"{'Game Name':<40} {'Similarity':<15} {'Owners':<15} {'Pos. Review Ratio':<20} {'Genre':<15}")
+    print(f"{'Game Name':<50} {'Similarity':<15} {'Owners':<15} {'Pos. Review Ratio':<20} {'Genre':<15}")
     print("-" * 100)
 
     for game in recommendations:
-        truncated_game_name = (game[0][:37] + '...') if len(game[0]) > 40 else game[0]
-        print(f"{truncated_game_name:<40} {game[1]:<15.2f} {game[2]:<15} {game[4]:<20.2f} {game[3]:<15}")
+        if isinstance(game, tuple):
+            print(f"{game[0]:<50} {game[1]:<15.2f} {game[2]:<15} {game[4]:<20.2f} {game[3]}")
+        else:
+            print(f"{game:<40}")
+    
+    print(f"\nUser {os.path.splitext(os.path.basename(user_profile_path))[0]} is classified in cluster: {cluster_genre}")
 else:
     print(f"User profile {user_profile_path} does not exist.")

@@ -16,246 +16,572 @@
         "Utilities": 0.23
     },
     "Tags": {
-        "Action": 88502,
-        "FPS": 63318,
-        "Multiplayer": 114570,
-        "Shooter": 72618,
-        "Classic": 4585,
-        "Team-Based": 39482,
-        "First-Person": 34029,
-        "Competitive": 36739,
-        "Tactical": 26007,
-        "1990's": 1231,
-        "e-sports": 21993,
-        "PvP": 44415,
-        "Old School": 807,
-        "Military": 12937,
-        "Strategy": 43374,
-        "Survival": 19881,
-        "Score Attack": 296,
-        "1980s": 276,
-        "Assassin": 237,
-        "Nostalgia": 180,
-        "Free to Play": 203324,
-        "Hero Shooter": 120840,
-        "Class-Based": 10892,
-        "Funny": 17310,
-        "Online Co-Op": 50680,
-        "Cartoony": 7356,
-        "Trading": 6874,
-        "Co-op": 46559,
-        "Comedy": 8110,
-        "Robots": 7380,
-        "Cartoon": 3884,
-        "Crafting": 6342,
-        "Early Access": 5970,
-        "Singleplayer": 23579,
-        "War": 16150,
-        "Massively Multiplayer": 29852,
-        "Violent": 2156,
-        "Open World": 26107,
-        "Gore": 3039,
-        "Adventure": 16535,
-        "MMORPG": 10877,
-        "Action RPG": 18414,
-        "Hack and Slash": 8460,
-        "RPG": 26959,
-        "Character Customization": 17566,
-        "Sexual Content": 315,
-        "Fantasy": 14492,
-        "PvE": 18595,
-        "Isometric": 670,
-        "Battle Royale": 14011,
-        "Sci-fi": 15950,
-        "Loot": 3784,
-        "Lore-Rich": 10641,
-        "Cyberpunk": 389,
-        "Cinematic": 786,
-        "3D": 3512,
-        "Medieval": 4051,
-        "Atmospheric": 17573,
-        "Magic": 1115,
-        "Simulation": 25127,
-        "Cooking": 598,
-        "Combat": 5556,
-        "VR": 3961,
-        "Action-Adventure": 299,
-        "Realistic": 24345,
-        "Flight": 3863,
-        "Grand Strategy": 5040,
-        "Strategy RPG": 275,
-        "Swordplay": 272,
-        "Wargame": 845,
-        "RTS": 10932,
-        "Tactical RPG": 6319,
-        "Action RTS": 241,
-        "Real Time Tactics": 7182,
-        "Looter Shooter": 17707,
-        "Third-Person Shooter": 29870,
-        "Third Person": 25576,
-        "Space": 11258,
-        "Parkour": 7533,
-        "Ninja": 7532,
-        "Horror": 1151,
-        "Dark": 223,
-        "Puzzle": 4834,
-        "Psychological Horror": 433,
-        "Puzzle-Platformer": 3466,
-        "Side Scroller": 207,
-        "2.5D": 203,
-        "Stealth": 1419,
-        "Survival Horror": 864,
-        "Surreal": 132,
-        "Psychedelic": 105,
-        "Mystery": 104,
-        "Steampunk": 94,
-        "Thriller": 87,
-        "Physics": 1256,
-        "Casual": 8044,
-        "Clicker": 2241,
-        "Indie": 8773,
-        "Dark Humor": 751,
-        "Story Rich": 2188,
-        "Cult Classic": 48,
-        "Turn-Based": 1023,
-        "Match 3": 129,
-        "Anime": 259,
-        "2D": 1572,
-        "Local Multiplayer": 1826,
-        "Female Protagonist": 1660,
-        "Turn-Based Strategy": 983,
-        "Turn-Based Tactics": 7862,
-        "Board Game": 720,
-        "Based On A Novel": 297,
-        "Exploration": 12454,
-        "Dark Fantasy": 285,
-        "MOBA": 22154,
-        "Controller": 5103,
-        "Colorful": 6755,
-        "City Builder": 1068,
-        "Building": 2959,
-        "Real-Time": 350,
-        "Base-Building": 231,
-        "Sandbox": 3767,
-        "Colony Sim": 218,
-        "Idler": 1574,
-        "JRPG": 75,
-        "Card Game": 6688,
-        "Turn-Based Combat": 691,
-        "Great Soundtrack": 2525,
-        "Driving": 12649,
-        "Transportation": 12541,
-        "Automobile Sim": 12446,
-        "Moddable": 13599,
-        "Relaxing": 12043,
-        "Immersive Sim": 11907,
-        "Economy": 12595,
-        "Management": 13697,
-        "Family Friendly": 4601,
-        "Experimental": 53,
-        "Short": 866,
-        "Walking Simulator": 266,
-        "Metroidvania": 181,
-        "Cute": 43,
-        "Beat 'em up": 20,
-        "2D Platformer": 16,
-        "Nudity": 108,
-        "Trading Card Game": 7230,
-        "Stylized": 7064,
-        "Card Battler": 6099,
-        "Deckbuilding": 6010,
-        "Tower Defense": 7990,
-        "Touch-Friendly": 693,
-        "Addictive": 283,
-        "Illuminati": 280,
-        "Sports": 4410,
-        "Football (Soccer)": 5358,
-        "Football (American)": 2475,
-        "Mystery Dungeon": 48,
-        "CRPG": 354,
-        "Choices Matter": 395,
-        "Party-Based RPG": 325,
-        "Rogue-lite": 300,
-        "Top-Down": 707,
-        "Nonlinear": 228,
-        "Difficult": 9146,
-        "RPGMaker": 23,
-        "World War II": 8892,
-        "Historical": 3175,
-        "Racing": 4267,
-        "Fast-Paced": 3172,
-        "Split Screen": 1488,
-        "Local Co-Op": 1441,
-        "4 Player Local": 1212,
-        "Mythology": 555,
-        "Dungeon Crawler": 184,
-        "Level Editor": 99,
-        "Gun Customization": 2666,
-        "Mature": 827,
-        "Blood": 269,
-        "Arena Shooter": 185,
-        "Tabletop": 356,
-        "Vehicular Combat": 5597,
-        "Tanks": 6548,
-        "Naval Combat": 3599,
-        "Modern": 3538,
-        "Cold War": 3528,
-        "Zombies": 2495,
-        "Post-apocalyptic": 252,
-        "Replay Value": 3389,
-        "Futuristic": 694,
-        "Hex Grid": 206,
-        "Asynchronous Multiplayer": 19,
-        "Combat Racing": 380,
-        "Destruction": 5042,
-        "Music": 71,
-        "Arcade": 64,
-        "Aliens": 659,
-        "Soundtrack": 382,
-        "Trains": 211,
-        "America": 307,
-        "Western": 115,
-        "Resource Management": 251,
-        "Politics": 820,
-        "Political Sim": 1633,
-        "Diplomacy": 573,
-        "Real-Time with Pause": 518,
-        "Political": 377,
-        "3D Platformer": 3437,
-        "Gambling": 89,
-        "Conversation": 42,
-        "Memes": 29,
-        "Point & Click": 25,
-        "Dungeons & Dragons": 219,
-        "Dragons": 133,
-        "Dwarf": 61,
-        "Superhero": 319,
-        "Comic Book": 165,
-        "Fighting": 1251,
-        "Platformer": 987,
-        "Linear": 41,
-        "Pixel Graphics": 11,
-        "Spaceships": 131,
-        "4X": 123,
-        "Auto Battler": 490,
-        "Chess": 182,
-        "Automation": 37,
-        "Action Roguelike": 50,
-        "Bullet Hell": 43,
-        "Rogue-like": 36,
-        "Mechs": 28,
-        "Retro": 18,
-        "Utilities": 156,
-        "Warhammer 40K": 179,
-        "Mod": 96,
-        "Visual Novel": 56,
-        "LGBTQ+": 5,
-        "Dystopian ": 250,
-        "Episodic": 179,
-        "Silent Protagonist": 172,
-        "Artificial Intelligence": 11,
-        "Procedural Generation": 11,
-        "Unforgiving": 11,
-        "Science": 818
-    }
+        "Action": 12005.579999999996,
+        "FPS": 9182.35,
+        "Multiplayer": 11750.189999999993,
+        "Shooter": 9399.939999999999,
+        "Classic": 4294.24,
+        "Team-Based": 9168.010000000002,
+        "First-Person": 9208.46,
+        "Competitive": 6297.42,
+        "Tactical": 9527.679999999997,
+        "1990's": 4134.9,
+        "e-sports": 4139.55,
+        "PvP": 9204.72,
+        "Old School": 4134.9,
+        "Military": 5987.049999999999,
+        "Strategy": 7244.279999999997,
+        "Survival": 5254.63,
+        "Score Attack": 4134.9,
+        "1980s": 4134.9,
+        "Assassin": 4134.9,
+        "Nostalgia": 4134.9,
+        "Free to Play": 7247.120000000001,
+        "Hero Shooter": 3160.85,
+        "Class-Based": 3325.92,
+        "Funny": 3287.4800000000005,
+        "Online Co-Op": 4080.9900000000002,
+        "Cartoony": 2137.88,
+        "Trading": 2134.07,
+        "Co-op": 5503.030000000002,
+        "Comedy": 2254.4700000000003,
+        "Robots": 2133.32,
+        "Cartoon": 2132.5,
+        "Crafting": 2606.4900000000002,
+        "Early Access": 2227.6600000000003,
+        "Singleplayer": 4592.39,
+        "War": 2723.3900000000003,
+        "Massively Multiplayer": 4379.84,
+        "Violent": 3036.41,
+        "Open World": 2960.1400000000003,
+        "Gore": 3038.67,
+        "Adventure": 4504.9900000000025,
+        "MMORPG": 1898.94,
+        "Action RPG": 1516.8,
+        "Hack and Slash": 1394.6,
+        "RPG": 2280.4199999999996,
+        "Character Customization": 3496.8300000000004,
+        "Sexual Content": 1211.6999999999998,
+        "Fantasy": 2118.8,
+        "PvE": 1470.1399999999999,
+        "Isometric": 1264.0,
+        "Battle Royale": 976.6399999999999,
+        "Sci-fi": 1201.8399999999997,
+        "Loot": 977.22,
+        "Lore-Rich": 1175.3899999999999,
+        "Cyberpunk": 961.4,
+        "Cinematic": 963.0899999999999,
+        "3D": 473.53000000000003,
+        "Medieval": 997.92,
+        "Atmospheric": 703.9799999999998,
+        "Magic": 562.52,
+        "Simulation": 1064.7600000000002,
+        "Cooking": 454.0,
+        "Combat": 473.69999999999993,
+        "VR": 342.34999999999997,
+        "Action-Adventure": 468.97999999999996,
+        "Realistic": 397.69999999999993,
+        "Flight": 343.31999999999994,
+        "Grand Strategy": 389.95,
+        "Strategy RPG": 319.3,
+        "Swordplay": 319.3,
+        "Wargame": 387.13,
+        "RTS": 484.21999999999997,
+        "Tactical RPG": 344.53000000000003,
+        "Action RTS": 319.3,
+        "Real Time Tactics": 410.63,
+        "Looter Shooter": 212.32,
+        "Third-Person Shooter": 238.50000000000003,
+        "Third Person": 510.71,
+        "Space": 239.10000000000002,
+        "Parkour": 211.1,
+        "Ninja": 211.1,
+        "Horror": 167.97000000000003,
+        "Dark": 129.5,
+        "Puzzle": 207.96000000000004,
+        "Psychological Horror": 167.50000000000003,
+        "Puzzle-Platformer": 130.10000000000002,
+        "Side Scroller": 157.1,
+        "2.5D": 157.1,
+        "Stealth": 143.0,
+        "Survival Horror": 131.77,
+        "Surreal": 129.5,
+        "Psychedelic": 129.5,
+        "Mystery": 163.3,
+        "Steampunk": 129.5,
+        "Thriller": 129.5,
+        "Physics": 131.52,
+        "Casual": 321.83,
+        "Clicker": 109.94999999999999,
+        "Indie": 246.2800000000001,
+        "Dark Humor": 85.02,
+        "Story Rich": 222.29000000000002,
+        "Cult Classic": 85.0,
+        "Turn-Based": 140.49,
+        "Match 3": 77.5,
+        "Anime": 174.79999999999998,
+        "2D": 102.00999999999999,
+        "Local Multiplayer": 89.98,
+        "Female Protagonist": 106.1,
+        "Turn-Based Strategy": 99.11000000000001,
+        "Turn-Based Tactics": 110.59000000000002,
+        "Board Game": 84.01000000000002,
+        "Based On A Novel": 74.5,
+        "Exploration": 143.44,
+        "Dark Fantasy": 90.38000000000001,
+        "MOBA": 68.7,
+        "Controller": 119.17,
+        "Colorful": 90.7,
+        "City Builder": 131.87,
+        "Building": 69.55999999999997,
+        "Real-Time": 67.16999999999999,
+        "Base-Building": 65.6,
+        "Sandbox": 82.71999999999998,
+        "Colony Sim": 65.6,
+        "Idler": 89.19999999999999,
+        "JRPG": 66.5,
+        "Card Game": 82.14000000000001,
+        "Turn-Based Combat": 72.61,
+        "Great Soundtrack": 71.75,
+        "Driving": 52.3,
+        "Transportation": 51.87,
+        "Automobile Sim": 52.3,
+        "Moddable": 53.28000000000001,
+        "Relaxing": 50.93,
+        "Immersive Sim": 50.3,
+        "Economy": 62.87,
+        "Management": 108.08999999999999,
+        "Family Friendly": 75.47,
+        "Experimental": 33.82,
+        "Short": 33.84,
+        "Walking Simulator": 35.769999999999996,
+        "Metroidvania": 28.18,
+        "Cute": 27.6,
+        "Beat 'em up": 27.6,
+        "2D Platformer": 27.6,
+        "Nudity": 31.980000000000004,
+        "Trading Card Game": 25.98,
+        "Stylized": 25.0,
+        "Card Battler": 25.23,
+        "Deckbuilding": 26.61,
+        "Tower Defense": 27.3,
+        "Touch-Friendly": 24.23,
+        "Addictive": 23.6,
+        "Illuminati": 23.6,
+        "Sports": 38.74000000000001,
+        "Football (Soccer)": 38.09,
+        "Football (American)": 37.32,
+        "Mystery Dungeon": 15.5,
+        "CRPG": 14.9,
+        "Choices Matter": 15.0,
+        "Party-Based RPG": 14.9,
+        "Rogue-lite": 14.9,
+        "Top-Down": 20.13,
+        "Nonlinear": 14.9,
+        "Difficult": 27.43,
+        "RPGMaker": 11.6,
+        "World War II": 13.680000000000001,
+        "Historical": 13.840000000000002,
+        "Racing": 8.0,
+        "Fast-Paced": 10.82,
+        "Split Screen": 6.0,
+        "Local Co-Op": 9.9,
+        "4 Player Local": 6.0,
+        "Mythology": 5.58,
+        "Dungeon Crawler": 5.62,
+        "Level Editor": 7.0,
+        "Gun Customization": 4.819999999999999,
+        "Mature": 5.73,
+        "Blood": 4.8,
+        "Arena Shooter": 4.8,
+        "Tabletop": 4.13,
+        "Vehicular Combat": 5.630000000000001,
+        "Tanks": 3.63,
+        "Naval Combat": 2.9,
+        "Modern": 2.9,
+        "Cold War": 2.9,
+        "Zombies": 4.709999999999999,
+        "Post-apocalyptic": 4.55,
+        "Replay Value": 6.81,
+        "Futuristic": 2.7800000000000002,
+        "Hex Grid": 2.58,
+        "Asynchronous Multiplayer": 2.0,
+        "Combat Racing": 2.0,
+        "Destruction": 3.35,
+        "Music": 2.0,
+        "Arcade": 2.0,
+        "Aliens": 1.79,
+        "Soundtrack": 1.77,
+        "Trains": 1.57,
+        "America": 1.72,
+        "Western": 1.57,
+        "Resource Management": 2.87,
+        "Politics": 2.22,
+        "Political Sim": 0.92,
+        "Diplomacy": 0.92,
+        "Real-Time with Pause": 0.9400000000000001,
+        "Political": 0.92,
+        "3D Platformer": 0.75,
+        "Gambling": 0.63,
+        "Conversation": 0.63,
+        "Memes": 0.63,
+        "Point & Click": 0.63,
+        "Dungeons & Dragons": 0.62,
+        "Dragons": 0.62,
+        "Dwarf": 0.62,
+        "Superhero": 0.62,
+        "Comic Book": 0.62,
+        "Fighting": 0.64,
+        "Platformer": 0.6,
+        "Linear": 0.58,
+        "Pixel Graphics": 0.58,
+        "Spaceships": 0.58,
+        "4X": 0.58,
+        "Auto Battler": 0.4,
+        "Chess": 0.4,
+        "Automation": 0.4,
+        "Action Roguelike": 0.33,
+        "Bullet Hell": 0.33,
+        "Rogue-like": 0.33,
+        "Mechs": 0.33,
+        "Retro": 0.33,
+        "Utilities": 0.23,
+        "Warhammer 40K": 0.23,
+        "Mod": 0.13,
+        "Visual Novel": 0.1,
+        "LGBTQ+": 0.1,
+        "Dystopian ": 0.02,
+        "Episodic": 0.02,
+        "Silent Protagonist": 0.02,
+        "Artificial Intelligence": 0.02,
+        "Procedural Generation": 0.02,
+        "Unforgiving": 0.02,
+        "Science": 0.02
+    },
+    "OwnedGames": [
+        [
+            "Counter-Strike 2",
+            4134.9
+        ],
+        [
+            "Team Fortress 2",
+            2132.5
+        ],
+        [
+            "Black Squad",
+            1845.2
+        ],
+        [
+            "Lost Ark",
+            1178.5
+        ],
+        [
+            "Apex Legends",
+            961.3
+        ],
+        [
+            "Black Desert",
+            454.0
+        ],
+        [
+            "Farlight 84",
+            338.9
+        ],
+        [
+            "Conqueror's Blade",
+            319.3
+        ],
+        [
+            "Warframe",
+            211.1
+        ],
+        [
+            "DiRT 3 Complete Edition",
+            129.5
+        ],
+        [
+            "Shakes and Fidget",
+            85.0
+        ],
+        [
+            "Might & Magic: Duel of Champions",
+            77.5
+        ],
+        [
+            "The Lord of the Rings Online\u2122",
+            74.5
+        ],
+        [
+            "Paladins",
+            65.7
+        ],
+        [
+            "Stronghold Kingdoms",
+            65.6
+        ],
+        [
+            "The Settlers Online",
+            63.4
+        ],
+        [
+            "MOBIUS FINAL FANTASY",
+            54.9
+        ],
+        [
+            "Euro Truck Simulator 2",
+            50.3
+        ],
+        [
+            "Call of War",
+            33.8
+        ],
+        [
+            "MARVEL SNAP",
+            27.6
+        ],
+        [
+            "Minion Masters",
+            25.0
+        ],
+        [
+            "Clicker Heroes",
+            23.6
+        ],
+        [
+            "Star Trek Online",
+            21.9
+        ],
+        [
+            "Soccer Manager 2018",
+            19.8
+        ],
+        [
+            "Runes of Magic",
+            15.5
+        ],
+        [
+            "Gems of War",
+            14.9
+        ],
+        [
+            "PUBG: BATTLEGROUNDS",
+            13.5
+        ],
+        [
+            "Zula Europe",
+            11.6
+        ],
+        [
+            "Soccer Manager 2017",
+            10.7
+        ],
+        [
+            "Albion Online",
+            9.7
+        ],
+        [
+            "Heroes & Generals",
+            6.4
+        ],
+        [
+            "Rocket League",
+            6.0
+        ],
+        [
+            "Titan Quest Anniversary Edition",
+            5.0
+        ],
+        [
+            "Loadout",
+            4.8
+        ],
+        [
+            "AVA: Dog Tag",
+            4.1
+        ],
+        [
+            "RISK: Global Domination",
+            3.9
+        ],
+        [
+            "Bless Online",
+            3.1
+        ],
+        [
+            "War Thunder",
+            2.9
+        ],
+        [
+            "BlackShot: Mercenary Warfare FPS",
+            2.4
+        ],
+        [
+            "Dota 2",
+            2.3
+        ],
+        [
+            "PlanetSide 2",
+            2.2
+        ],
+        [
+            "Order of Battle: World War II",
+            2.0
+        ],
+        [
+            "FlatOut 2",
+            2.0
+        ],
+        [
+            "Infestation: The New Z",
+            1.97
+        ],
+        [
+            "Halo Infinite",
+            1.77
+        ],
+        [
+            "Day of Infamy",
+            1.65
+        ],
+        [
+            "Badlanders",
+            1.57
+        ],
+        [
+            "Railway Empire",
+            1.57
+        ],
+        [
+            "the Ark of Horizon",
+            1.52
+        ],
+        [
+            "High Profits",
+            1.35
+        ],
+        [
+            "Tom Clancy's Rainbow Six Siege",
+            1.35
+        ],
+        [
+            "Tropico 5",
+            1.3
+        ],
+        [
+            "Destiny 2",
+            1.22
+        ],
+        [
+            "The Elder Scrolls: Legends",
+            0.98
+        ],
+        [
+            "Crusader Kings II",
+            0.92
+        ],
+        [
+            "Robocraft",
+            0.82
+        ],
+        [
+            "Soccer Manager 2019",
+            0.82
+        ],
+        [
+            "Supraball",
+            0.77
+        ],
+        [
+            "World of Tanks Blitz",
+            0.73
+        ],
+        [
+            "Poker Night at the Inventory",
+            0.63
+        ],
+        [
+            "Dungeons & Dragons Online\u00ae",
+            0.62
+        ],
+        [
+            "Gotham City Impostors: Free To Play",
+            0.62
+        ],
+        [
+            "CRSED: Cuisine Royale",
+            0.58
+        ],
+        [
+            "THE FINALS",
+            0.58
+        ],
+        [
+            "Dota Underlords",
+            0.4
+        ],
+        [
+            "Ghost in the Shell: Stand Alone Complex - First Assault Online",
+            0.37
+        ],
+        [
+            "AirMech",
+            0.33
+        ],
+        [
+            "Resident Evil 7 Teaser: Beginning Hour",
+            0.3
+        ],
+        [
+            "Ring of Elysium",
+            0.3
+        ],
+        [
+            "Master Arena",
+            0.25
+        ],
+        [
+            "ESEA",
+            0.23
+        ],
+        [
+            "Warhammer Underworlds - Shadespire Edition",
+            0.23
+        ],
+        [
+            "America's Army: Proving Grounds",
+            0.15
+        ],
+        [
+            "Argo",
+            0.13
+        ],
+        [
+            "NEOTOKYO\u00b0",
+            0.1
+        ],
+        [
+            "Half-Life 2: Episode One",
+            0.02
+        ],
+        [
+            "Joint War",
+            0.02
+        ],
+        [
+            "Last Man Standing",
+            0.02
+        ],
+        [
+            "Portal",
+            0.02
+        ],
+        [
+            "Street Warriors Online",
+            0.02
+        ],
+        [
+            "Warface:\u00a0Clutch",
+            0.02
+        ]
+    ]
 }

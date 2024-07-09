@@ -18,560 +18,1283 @@
         "Audio Production": 0.12
     },
     "Tags": {
-        "Action": 202777,
-        "FPS": 123928,
-        "Multiplayer": 177877,
-        "Shooter": 120869,
-        "Classic": 17171,
-        "Team-Based": 38481,
-        "First-Person": 126565,
-        "Competitive": 19447,
-        "Tactical": 22013,
-        "1990's": 6616,
-        "e-sports": 18357,
-        "PvP": 51784,
-        "Old School": 3334,
-        "Military": 8747,
-        "Strategy": 55324,
-        "Survival": 105797,
-        "Score Attack": 991,
-        "1980s": 1099,
-        "Assassin": 2030,
-        "Nostalgia": 736,
-        "Battle Royale": 11224,
-        "Third-Person Shooter": 29969,
-        "Online Co-Op": 78258,
-        "Co-op": 110922,
-        "Early Access": 7570,
-        "Third Person": 56363,
-        "Difficult": 13169,
-        "Simulation": 48933,
-        "Stealth": 33463,
-        "Free to Play": 80905,
-        "Board Game": 252,
-        "War": 7546,
-        "Turn-Based Strategy": 3195,
-        "Turn-Based": 3488,
-        "Singleplayer": 96926,
-        "Casual": 13860,
-        "Tabletop": 95,
-        "Turn-Based Tactics": 7596,
-        "Local Co-Op": 6654,
-        "Indie": 20937,
-        "Grand Strategy": 2082,
-        "Local Multiplayer": 4019,
-        "Psychological Horror": 11013,
-        "Massively Multiplayer": 26016,
-        "Horror": 90644,
-        "Survival Horror": 45478,
-        "Gore": 26948,
-        "Blood": 6764,
-        "Violent": 13065,
-        "Atmospheric": 98121,
-        "Comedy": 28273,
-        "Mature": 27918,
-        "Sci-fi": 32970,
-        "Action Roguelike": 840,
-        "Bullet Hell": 896,
-        "Rogue-lite": 997,
-        "Hack and Slash": 5729,
-        "Arena Shooter": 813,
-        "Arcade": 2045,
-        "Top-Down Shooter": 902,
-        "Controller": 7578,
-        "Combat": 4065,
-        "RPG": 58125,
-        "2D": 7325,
-        "Post-apocalyptic": 57161,
-        "Funny": 31614,
-        "Procedural Generation": 3574,
-        "Physics": 6995,
-        "Party": 730,
-        "Platformer": 13305,
-        "Retro": 4157,
-        "Adventure": 115945,
-        "Zombies": 69380,
-        "Story Rich": 55990,
-        "Point & Click": 2741,
-        "Episodic": 2146,
-        "Choices Matter": 7902,
-        "Drama": 1376,
-        "Emotional": 1469,
-        "Choose Your Own Adventure": 21705,
-        "Comic Book": 849,
-        "Quick-Time Events": 2475,
-        "Open World": 145201,
-        "Sandbox": 56199,
-        "Utilities": 162,
-        "Software Training": 21,
-        "Female Protagonist": 15046,
-        "Exploration": 36009,
-        "Action-Adventure": 11374,
-        "Puzzle": 13476,
-        "Cinematic": 2175,
-        "Reboot": 859,
-        "3D Vision": 773,
-        "Dark Humor": 12513,
-        "Satire": 1266,
-        "Nudity": 7421,
-        "Cartoon": 795,
-        "Fantasy": 25758,
-        "Epic": 1811,
-        "JRPG": 697,
-        "Warhammer 40K": 729,
-        "Games Workshop": 109,
-        "Dystopian ": 2877,
-        "Futuristic": 2265,
-        "Great Soundtrack": 34320,
-        "Aliens": 5715,
-        "Silent Protagonist": 2954,
-        "Moddable": 36195,
-        "Card Game": 6455,
-        "Romance": 114,
-        "Turn-Based Combat": 90,
-        "Anime": 971,
-        "Remake": 1026,
-        "Character Customization": 9691,
-        "3D Platformer": 7422,
-        "Family Friendly": 7221,
-        "Colorful": 6715,
-        "Racing": 12944,
-        "Cute": 985,
-        "Cartoony": 2509,
-        "Party Game": 808,
-        "Action RPG": 21137,
-        "Memes": 3267,
-        "Linear": 654,
-        "Replay Value": 5451,
-        "Class-Based": 785,
-        "Bullet Time": 789,
-        "3D": 2269,
-        "Dark Comedy": 1504,
-        "Crafting": 13155,
-        "Open World Survival Craft": 25540,
-        "Space": 6132,
-        "Space Sim": 2211,
-        "VR": 4550,
-        "Cult Classic": 640,
-        "Dark": 4435,
-        "Puzzle-Platformer": 7002,
-        "Text-Based": 301,
-        "Heist": 7749,
-        "Crime": 25919,
-        "Dragons": 8005,
-        "Medieval": 11266,
-        "Magic": 7055,
-        "Lore-Rich": 2451,
-        "Mini Golf": 449,
-        "Sports": 898,
-        "Golf": 380,
-        "Offroad": 26,
-        "Split Screen": 277,
-        "Motorbike": 14,
-        "Runner": 228,
-        "Lovecraftian": 23,
-        "Driving": 13022,
-        "Automobile Sim": 30843,
-        "Sexual Content": 200,
-        "Swordplay": 1219,
-        "Ninja": 406,
-        "Demons": 160,
-        "Steampunk": 4946,
-        "Underwater": 644,
-        "Alternate History": 1376,
-        "Immersive Sim": 12049,
-        "Relaxing": 12403,
-        "Sniper": 870,
-        "World War II": 3173,
-        "Historical": 4670,
-        "Psychological": 819,
-        "Surreal": 343,
-        "Collectathon": 105,
-        "Spaceships": 200,
-        "Trading": 196,
-        "Flight": 416,
-        "Tactical RPG": 5955,
-        "Destruction": 598,
-        "Science": 4927,
-        "Looter Shooter": 13390,
-        "Gun Customization": 3726,
-        "PvE": 15557,
-        "Base-Building": 11098,
-        "Mythology": 262,
-        "Hand-drawn": 247,
-        "Isometric": 2312,
-        "Vikings": 39,
-        "Kickstarter": 82,
-        "Boss Rush": 21,
-        "Souls-like": 33,
-        "Rogue-like": 239,
-        "Dwarf": 144,
-        "Tower Defense": 10325,
-        "Shoot 'Em Up": 1329,
-        "Stylized": 7477,
-        "Top-Down": 450,
-        "Building": 12497,
-        "Loot": 9790,
-        "Mining": 88,
-        "Action RTS": 82,
-        "Short": 144,
-        "Side Scroller": 571,
-        "4 Player Local": 2396,
-        "Beautiful": 2854,
-        "Superhero": 294,
-        "Precision Platformer": 794,
-        "2D Platformer": 2723,
-        "Pixel Graphics": 2127,
-        "Vehicular Combat": 55,
-        "Music": 597,
-        "RTS": 14855,
-        "Gothic": 186,
-        "Beat 'em up": 238,
-        "Medical Sim": 528,
-        "Management": 16333,
-        "City Builder": 2803,
-        "Voxel": 120,
-        "Real Time Tactics": 8412,
-        "Colony Sim": 1817,
-        "Economy": 13773,
-        "Real-Time": 1649,
-        "Resource Management": 1336,
-        "Visual Novel": 275,
-        "Multiple Endings": 3867,
-        "Illuminati": 140,
-        "Realistic": 15807,
-        "Walking Simulator": 374,
-        "Education": 146,
-        "Fighting": 4061,
-        "3D Fighter": 253,
-        "2D Fighter": 2166,
-        "Parkour": 5794,
-        "Western": 1522,
-        "Hunting": 107,
-        "America": 371,
-        "2.5D": 54,
-        "Bowling": 825,
-        "Mechs": 134,
-        "Robots": 72,
-        "Snow": 7,
-        "Rhythm": 30,
-        "Touch-Friendly": 63,
-        "MOBA": 19975,
-        "Fast-Paced": 658,
-        "Transportation": 12432,
-        "Level Editor": 5954,
-        "Cyberpunk": 322,
-        "Experimental": 15,
-        "Psychedelic": 13,
-        "Time Manipulation": 216,
-        "Minimalist": 361,
-        "Artificial Intelligence": 168,
-        "Hero Shooter": 280,
-        "Mod": 579,
-        "Co-op Campaign": 236,
-        "Modern": 1506,
-        "Intentionally Awkward Controls": 10,
-        "Dungeon Crawler": 27,
-        "Werewolves": 28,
-        "Mars": 162,
-        "Twin Stick Shooter": 312,
-        "RPGMaker": 180,
-        "Typing": 17,
-        "Real-Time with Pause": 328,
-        "Politics": 126,
-        "Political": 681,
-        "Cold War": 501,
-        "Capitalism": 57,
-        "God Game": 295,
-        "Match 3": 16,
-        "Perma Death": 62,
-        "Noir": 18,
-        "Character Action Game": 124,
-        "Spectacle fighter": 92,
-        "Dating Sim": 32,
-        "Tanks": 716,
-        "4X": 543,
-        "Diplomacy": 322,
-        "Addictive": 29,
-        "Hidden Object": 187,
-        "Trading Card Game": 7463,
-        "Card Battler": 5767,
-        "Deckbuilding": 5754,
-        "Mystery": 470,
-        "Metroidvania": 7,
-        "Vampire": 100,
-        "Naval": 48,
-        "Boomer Shooter": 20,
-        "Time Travel": 511,
-        "Immersive": 575,
-        "GameMaker": 10,
-        "Unforgiving": 10,
-        "Time Management": 62,
-        "Mouse only": 12,
-        "Thriller": 783,
-        "Supernatural": 286,
-        "Narration": 373,
-        "Dark Fantasy": 3828,
-        "Interactive Fiction": 73,
-        "Based On A Novel": 695,
-        "Escape Room": 16,
-        "Rome": 1002,
-        "Logic": 45,
-        "Villain Protagonist": 260,
-        "Conversation": 817,
-        "MMORPG": 21,
-        "Dinosaurs": 8967,
-        "Life Sim": 116,
-        "Animation & Modeling": 46,
-        "Soundtrack": 80,
-        "Audio Production": 137,
-        "Software": 96,
-        "World War I": 5,
-        "NSFW": 5,
-        "TrackIR": 75,
-        "Combat Racing": 178
+        "Action": 8734.970000000014,
+        "FPS": 8145.080000000001,
+        "Multiplayer": 8438.820000000009,
+        "Shooter": 8270.490000000005,
+        "Classic": 7800.349999999998,
+        "Team-Based": 7987.410000000002,
+        "First-Person": 8213.370000000004,
+        "Competitive": 7904.380000000002,
+        "Tactical": 8015.490000000002,
+        "1990's": 7635.89,
+        "e-sports": 7539.450000000001,
+        "PvP": 7967.060000000001,
+        "Old School": 7574.840000000001,
+        "Military": 7557.070000000001,
+        "Strategy": 8224.020000000006,
+        "Survival": 8183.150000000002,
+        "Score Attack": 7529.220000000001,
+        "1980s": 7534.92,
+        "Assassin": 7529.440000000001,
+        "Nostalgia": 7560.59,
+        "Battle Royale": 360.1,
+        "Third-Person Shooter": 445.9,
+        "Online Co-Op": 699.87,
+        "Co-op": 677.96,
+        "Early Access": 365.82,
+        "Third Person": 600.5200000000002,
+        "Difficult": 523.43,
+        "Simulation": 541.4099999999997,
+        "Stealth": 463.23,
+        "Free to Play": 111.24,
+        "Board Game": 62.3,
+        "War": 112.25,
+        "Turn-Based Strategy": 154.70000000000002,
+        "Turn-Based": 202.5,
+        "Singleplayer": 810.4900000000005,
+        "Casual": 289.7700000000001,
+        "Tabletop": 62.3,
+        "Turn-Based Tactics": 77.5,
+        "Local Co-Op": 148.61,
+        "Indie": 390.1999999999996,
+        "Grand Strategy": 77.19999999999999,
+        "Local Multiplayer": 134.76000000000005,
+        "Psychological Horror": 141.35000000000002,
+        "Massively Multiplayer": 137.27,
+        "Horror": 271.2899999999999,
+        "Survival Horror": 153.98999999999998,
+        "Gore": 282.4000000000001,
+        "Blood": 52.8,
+        "Violent": 113.08,
+        "Atmospheric": 442.38999999999976,
+        "Comedy": 244.10999999999993,
+        "Mature": 154.82999999999998,
+        "Sci-fi": 270.07,
+        "Action Roguelike": 50.9,
+        "Bullet Hell": 70.69999999999999,
+        "Rogue-lite": 59.199999999999996,
+        "Hack and Slash": 90.9,
+        "Arena Shooter": 50.129999999999995,
+        "Arcade": 109.55000000000001,
+        "Top-Down Shooter": 51.33,
+        "Controller": 128.9,
+        "Combat": 69.1,
+        "RPG": 282.7899999999999,
+        "2D": 207.01999999999998,
+        "Post-apocalyptic": 184.86,
+        "Funny": 271.47,
+        "Procedural Generation": 57.3,
+        "Physics": 78.02000000000001,
+        "Party": 47.55,
+        "Platformer": 119.15,
+        "Retro": 144.50999999999996,
+        "Adventure": 633.5999999999999,
+        "Zombies": 200.09000000000003,
+        "Story Rich": 306.61999999999983,
+        "Point & Click": 82.30000000000001,
+        "Episodic": 41.4,
+        "Choices Matter": 56.459999999999994,
+        "Drama": 37.15999999999999,
+        "Emotional": 37.57999999999999,
+        "Choose Your Own Adventure": 78.18000000000002,
+        "Comic Book": 36.699999999999996,
+        "Quick-Time Events": 70.73,
+        "Open World": 245.98999999999998,
+        "Sandbox": 113.97000000000003,
+        "Utilities": 30.42,
+        "Software Training": 30.3,
+        "Female Protagonist": 81.00000000000001,
+        "Exploration": 104.9,
+        "Action-Adventure": 78.33,
+        "Puzzle": 146.14000000000001,
+        "Cinematic": 49.36,
+        "Reboot": 36.93,
+        "3D Vision": 39.42999999999999,
+        "Dark Humor": 71.43,
+        "Satire": 34.0,
+        "Nudity": 79.71999999999998,
+        "Cartoon": 33.77,
+        "Fantasy": 122.91000000000001,
+        "Epic": 57.099999999999994,
+        "JRPG": 72.2,
+        "Warhammer 40K": 23.2,
+        "Games Workshop": 23.2,
+        "Dystopian ": 40.35,
+        "Futuristic": 40.98,
+        "Great Soundtrack": 234.0799999999999,
+        "Aliens": 68.25,
+        "Silent Protagonist": 29.099999999999998,
+        "Moddable": 99.02999999999999,
+        "Card Game": 24.4,
+        "Romance": 40.129999999999995,
+        "Turn-Based Combat": 24.999999999999996,
+        "Anime": 41.19999999999999,
+        "Remake": 49.78,
+        "Character Customization": 57.419999999999995,
+        "3D Platformer": 29.52,
+        "Family Friendly": 47.84,
+        "Colorful": 35.07,
+        "Racing": 49.220000000000006,
+        "Cute": 27.849999999999998,
+        "Cartoony": 33.03,
+        "Party Game": 17.55,
+        "Action RPG": 48.129999999999995,
+        "Memes": 38.699999999999996,
+        "Linear": 28.7,
+        "Replay Value": 28.02,
+        "Class-Based": 19.7,
+        "Bullet Time": 23.499999999999996,
+        "3D": 38.85999999999999,
+        "Dark Comedy": 25.4,
+        "Crafting": 43.32000000000001,
+        "Open World Survival Craft": 27.1,
+        "Space": 33.22,
+        "Space Sim": 16.4,
+        "VR": 30.07,
+        "Cult Classic": 21.53,
+        "Dark": 32.129999999999995,
+        "Puzzle-Platformer": 15.069999999999999,
+        "Text-Based": 11.3,
+        "Heist": 14.899999999999999,
+        "Crime": 22.13,
+        "Dragons": 8.77,
+        "Medieval": 20.110000000000003,
+        "Magic": 15.28,
+        "Lore-Rich": 8.5,
+        "Mini Golf": 8.0,
+        "Sports": 27.32,
+        "Golf": 8.0,
+        "Offroad": 6.8,
+        "Split Screen": 9.47,
+        "Motorbike": 6.8,
+        "Runner": 8.69,
+        "Lovecraftian": 8.8,
+        "Driving": 15.120000000000001,
+        "Automobile Sim": 12.2,
+        "Sexual Content": 23.6,
+        "Swordplay": 11.2,
+        "Ninja": 8.7,
+        "Demons": 6.6,
+        "Steampunk": 14.649999999999999,
+        "Underwater": 8.75,
+        "Alternate History": 11.45,
+        "Immersive Sim": 11.7,
+        "Relaxing": 12.4,
+        "Sniper": 6.3,
+        "World War II": 14.05,
+        "Historical": 38.10999999999999,
+        "Psychological": 6.95,
+        "Surreal": 17.5,
+        "Collectathon": 6.3,
+        "Spaceships": 6.3,
+        "Trading": 6.3,
+        "Flight": 15.579999999999998,
+        "Tactical RPG": 8.7,
+        "Destruction": 11.22,
+        "Science": 8.8,
+        "Looter Shooter": 11.2,
+        "Gun Customization": 8.6,
+        "PvE": 19.290000000000003,
+        "Base-Building": 21.64,
+        "Mythology": 8.3,
+        "Hand-drawn": 8.319999999999999,
+        "Isometric": 31.360000000000007,
+        "Vikings": 6.1,
+        "Kickstarter": 9.8,
+        "Boss Rush": 6.1,
+        "Souls-like": 8.3,
+        "Rogue-like": 13.6,
+        "Dwarf": 6.1,
+        "Tower Defense": 29.999999999999993,
+        "Shoot 'Em Up": 39.53999999999999,
+        "Stylized": 13.12,
+        "Top-Down": 14.47,
+        "Building": 29.159999999999997,
+        "Loot": 9.1,
+        "Mining": 6.1,
+        "Action RTS": 6.1,
+        "Short": 15.360000000000001,
+        "Side Scroller": 19.000000000000004,
+        "4 Player Local": 10.46,
+        "Beautiful": 9.56,
+        "Superhero": 9.6,
+        "Precision Platformer": 6.5200000000000005,
+        "2D Platformer": 6.550000000000001,
+        "Pixel Graphics": 38.769999999999996,
+        "Vehicular Combat": 8.3,
+        "Music": 8.819999999999999,
+        "RTS": 35.89,
+        "Gothic": 7.6,
+        "Beat 'em up": 12.32,
+        "Medical Sim": 4.5,
+        "Management": 26.15,
+        "City Builder": 17.07,
+        "Voxel": 6.699999999999999,
+        "Real Time Tactics": 17.19,
+        "Colony Sim": 6.93,
+        "Economy": 11.5,
+        "Real-Time": 6.93,
+        "Resource Management": 11.629999999999999,
+        "Visual Novel": 7.800000000000001,
+        "Multiple Endings": 4.88,
+        "Illuminati": 9.1,
+        "Realistic": 16.650000000000002,
+        "Walking Simulator": 11.629999999999999,
+        "Education": 7.629999999999999,
+        "Fighting": 6.33,
+        "3D Fighter": 3.9,
+        "2D Fighter": 3.9299999999999997,
+        "Parkour": 10.900000000000002,
+        "Western": 7.7,
+        "Hunting": 6.0,
+        "America": 9.53,
+        "2.5D": 5.3,
+        "Bowling": 3.6,
+        "Mechs": 8.6,
+        "Robots": 8.100000000000001,
+        "Snow": 3.5,
+        "Rhythm": 6.0,
+        "Touch-Friendly": 8.0,
+        "MOBA": 3.3,
+        "Fast-Paced": 6.75,
+        "Transportation": 3.0,
+        "Level Editor": 9.470000000000002,
+        "Cyberpunk": 8.319999999999999,
+        "Experimental": 2.9,
+        "Psychedelic": 2.9,
+        "Time Manipulation": 2.9,
+        "Minimalist": 5.4,
+        "Artificial Intelligence": 2.9,
+        "Hero Shooter": 3.02,
+        "Mod": 2.94,
+        "Co-op Campaign": 4.1000000000000005,
+        "Modern": 4.800000000000001,
+        "Intentionally Awkward Controls": 2.7,
+        "Dungeon Crawler": 4.800000000000001,
+        "Werewolves": 2.6,
+        "Mars": 2.5,
+        "Twin Stick Shooter": 9.299999999999999,
+        "RPGMaker": 9.200000000000001,
+        "Typing": 2.5,
+        "Real-Time with Pause": 4.9,
+        "Politics": 2.5,
+        "Political": 3.1999999999999997,
+        "Cold War": 7.1000000000000005,
+        "Capitalism": 2.5,
+        "God Game": 3.5300000000000002,
+        "Match 3": 2.5,
+        "Perma Death": 2.5,
+        "Noir": 2.4,
+        "Character Action Game": 4.6,
+        "Spectacle fighter": 2.4,
+        "Dating Sim": 4.5,
+        "Tanks": 4.7299999999999995,
+        "4X": 2.4,
+        "Diplomacy": 4.5,
+        "Addictive": 2.57,
+        "Hidden Object": 7.0,
+        "Trading Card Game": 4.63,
+        "Card Battler": 2.4,
+        "Deckbuilding": 2.4,
+        "Mystery": 4.6,
+        "Metroidvania": 2.4,
+        "Vampire": 2.4,
+        "Naval": 2.3,
+        "Boomer Shooter": 3.28,
+        "Time Travel": 2.43,
+        "Immersive": 2.25,
+        "GameMaker": 2.2,
+        "Unforgiving": 2.2,
+        "Time Management": 2.2,
+        "Mouse only": 2.2,
+        "Thriller": 4.300000000000001,
+        "Supernatural": 2.2,
+        "Narration": 4.57,
+        "Dark Fantasy": 3.81,
+        "Interactive Fiction": 2.1,
+        "Based On A Novel": 4.53,
+        "Escape Room": 2.1,
+        "Rome": 2.1,
+        "Logic": 1.43,
+        "Villain Protagonist": 1.03,
+        "Conversation": 0.87,
+        "MMORPG": 0.8,
+        "Dinosaurs": 0.27,
+        "Life Sim": 0.27,
+        "Animation & Modeling": 0.27,
+        "Soundtrack": 0.12,
+        "Audio Production": 0.12,
+        "Software": 0.12,
+        "World War I": 0.12,
+        "NSFW": 0.12,
+        "TrackIR": 0.02,
+        "Combat Racing": 0.02
     },
     "OwnedGames": [
-        "Counter-Strike 2",
-        "Counter-Strike",
-        "PUBG: BATTLEGROUNDS",
-        "RISK: Global Domination",
-        "Dead by Daylight",
-        "Brotato",
-        "Worms Armageddon",
-        "The Walking Dead",
-        "DayZ",
-        "Age of Empires II (2013)",
-        "Tomb Raider",
-        "South Park\u2122: The Stick of Truth\u2122",
-        "Warhammer 40,000: Space Marine - Anniversary Edition",
-        "Half-Life",
-        "FINAL FANTASY VIII",
-        "FINAL FANTASY VIII - REMASTERED",
-        "Stumble Guys",
-        "Fallout 4",
-        "Duke Nukem Forever",
-        "Left 4 Dead 2",
-        "Killing Floor",
-        "Dead Island Definitive Edition",
-        "No Man's Sky",
-        "Oddworld: Abe's Oddysee",
-        "60 Seconds!",
-        "Pixel Puzzles: UndeadZ",
-        "PAYDAY: The Heist",
-        "The Elder Scrolls V: Skyrim",
-        "Golf With Your Friends",
-        "Moto Racer  4",
-        "Blackbay Asylum",
-        "RAGE",
-        "Street Racing Syndicate",
-        "Shadow Warrior",
-        "Normality",
-        "BioShock 2 Remastered",
-        "Pixel Puzzles: Japan",
-        "Sniper Elite V2",
-        "Psychonauts",
-        "Starpoint Gemini 2",
-        "PAYDAY 2",
-        "Grounded",
-        "Half-Life 2",
-        "Jotun: Valhalla Edition",
-        "Mirage: Arcane Warfare",
-        "Back to Bed",
-        "Worms Reloaded",
-        "Half-Life: Alyx",
-        "Batman: Arkham City GOTY",
-        "Alex Kidd in Miracle World DX",
-        "Br\u00fctal Legend",
-        "Counter-Strike: Source",
-        "Pixel Puzzles 2: Anime",
-        "Two Point Hospital",
-        "Dead Bits",
-        "Stronghold Crusader HD",
-        "Sixtieth Kilometer",
-        "South Park The Fractured But Whole",
-        "Google Earth VR",
-        "TEKKEN 7",
-        "Dying Light",
-        "Guns of Icarus Online",
-        "Rise of the Tomb Raider",
-        "Gold Rush! Anniversary",
-        "Zombie Bowl-O-Rama",
-        "Lost Planet: Extreme Condition",
-        "Frederic: Resurrection of Music",
-        "Dota 2",
-        "RADical ROACH Remastered",
-        "Between Me and The Night",
-        "Pixel Puzzles 2: Birds",
-        "SNOWFLAKE TATTOO",
-        "Sonic Mania",
-        "Space Farmers",
-        "Borderlands 2",
-        "Euro Truck Simulator 2",
-        "Contagion",
-        "Incoming Forces",
-        "N.P.P.D. RUSH - The milk of Ultra violet",
-        "Pressured",
-        "Pester",
-        "Hostile Waters: Antaeus Rising",
-        "SUPERHOT VR",
-        "Outlast",
-        "Pixel Puzzles 2: Space",
-        "How to Survive",
-        "Company of Heroes",
-        "F.E.A.R. 3",
-        "Platypus II",
-        "Arma 2: Operation Arrowhead",
-        "Ampu-Tea",
-        "Constructor Plus",
-        "Runestone Keeper",
-        "Overcast - Walden and the Werewolf",
-        "Speed Kills",
-        "Slipstream 5000",
-        "Purgatory",
-        "Portal 2",
-        "POSTAL 2",
-        "Saviors",
-        "Selfie: Sisters of the Amniotic Lens",
-        "Showtime!",
-        "Plazma Being",
-        "Red Faction: Guerrilla Steam Edition",
-        "Shadowgrounds",
-        "Space Pilgrim Episode I: Alpha Centauri",
-        "Spin Rush",
-        "Grand Theft Auto V",
-        "Slash It",
-        "Tropico 4",
-        "Steam Heroes",
-        "Resident Evil 7 Biohazard",
-        "ZOMBI",
-        "Anomaly Warzone Earth",
-        "GemCraft - Chasing Shadows",
-        "Kingdom: Classic",
-        "The Bureau: XCOM Declassified",
-        "Bloop Reloaded",
-        "Killer is Dead",
-        "Sanctum 2",
-        "Trolley Gold",
-        "Blockstorm",
-        "Company of Heroes 2",
-        "ENDLESS\u2122 Space - Definitive Edition",
-        "Gun Metal",
-        "Heckabomb",
-        "Hero Defense",
-        "Horizon Shift",
-        "Gold Rush! Classic",
-        "Memories of a Vagabond",
-        "Minion Masters",
-        "Neon Space 2",
-        "Omerta - City of Gangsters",
-        "Cavern Escape",
-        "GEARCRACK Arena",
-        "Ionball 2 : Ionstorm",
-        "Luna Sky",
-        "Melissa K. and the Heart of Gold Collector's Edition",
-        "Neon Prism",
-        "Nosferatu: The Wrath of Malachi",
-        "TAIKU MANSION",
-        "Total War: NAPOLEON - Definitive Edition",
-        "Serious Sam VR: The Last Hope",
-        "ShellShock Live",
-        "Fly and Destroy",
-        "Call of Duty: Black Ops",
-        "BEEP",
-        "Chivalry: Medieval Warfare",
-        "BioShock Infinite",
-        "Cataegis : The White Wind",
-        "Crystals of Time",
-        "Cube Runner",
-        "Dead Island: Epidemic",
-        "12 Labours of Hercules II: The Cretan Bull",
-        "Agent Awesome",
-        "Alan Wake",
-        "Batman: Arkham Asylum GOTY Edition",
-        "Battleplan: American Civil War",
-        "Bedlam",
-        "BioShock Remastered",
-        "Chompy Chomp Chomp",
-        "Commando Jack",
-        "DarkEnd",
-        "Day of Defeat: Source",
-        "Canyon Capers",
-        "Three Dead Zed",
-        "Hitman: Absolution",
-        "Serious Sam 3: BFE",
-        "Vampire of the Sands",
-        "Dead Island Riptide Definitive Edition",
-        "Demonicon",
-        "The 39 Steps",
-        "The Dark Eye: Chains of Satinav",
-        "The Dark Stone from Mebara",
-        "Total War: SHOGUN 2",
-        "Despair",
-        "Super Killer Hornet: Resurrection",
-        "The Culling Of The Cows",
-        "Total War: ROME II - Emperor Edition",
-        "Uriel's Chasm",
-        "Uriel's Chasm 2: \u05d0\u05ea",
-        "60 Seconds! Reatomized",
-        "DiRT 3 Complete Edition",
-        "Duke of Alpha Centauri",
-        "Project Zomboid",
-        "The Walking Dead: Season Two",
-        "Yet Another Zombie Defense",
-        "Metro 2033",
-        "Fallout: New Vegas",
-        "Worms Clan Wars",
-        "Marvel Heroes Omega",
-        "Zup! S",
-        "The Expendabros",
-        "The Walking Dead: Saints & Sinners",
-        "Serious Sam Double D XXL",
-        "Defy Gravity",
-        "Dungeons 3",
-        "Serious Sam Fusion 2017 (beta)",
-        "Choplifter HD",
-        "Sven Co-op",
-        "Dead Island Retro Revenge",
-        "Yu-Gi-Oh! Duel Links",
-        "Aliens: Colonial Marines",
-        "THE FINALS",
-        "F.E.A.R. Online",
-        "Fallout",
-        "Spec Ops: The Line",
-        "Ben and Ed - Blood Party",
-        "Back 4 Blood",
-        "Homefront",
-        "Call of Duty\u00ae",
-        "Lara Croft and the Guardian of Light",
-        "Tomb Raider I",
-        "ARK: Survival Evolved",
-        "Zoo 2: Animal Park",
-        "Fallout Shelter",
-        "Lone Survivor: The Director's Cut",
-        "Last Day of June",
-        "Mafia",
-        "Stronghold Crusader Extreme HD",
-        "HITMAN\u2122 2",
-        "Arma 2: DayZ Mod",
-        "AX:EL",
-        "RollerCoaster Tycoon 2: Triple Thrill Pack",
-        "Chicken Shoot 2",
-        "Soundpad",
-        "No More Room in Hell",
-        "Bloons TD Battles 2",
-        "BioShock",
-        "Call of Duty: Black Ops - Multiplayer",
-        "Ultimate Chicken Horse",
-        "Brawlhalla",
-        "Company of Heroes: Opposing Fronts",
-        "Arma 2",
-        "Chicken Shoot Gold",
-        "Counter-Strike: Condition Zero Deleted Scenes",
-        "Fractured Space",
-        "Half-Life 2: Deathmatch",
-        "Left 4 Dead",
-        "Need for Speed\u2122 Heat",
-        "Tetris for Two"
+        [
+            "Counter-Strike 2",
+            4152.2
+        ],
+        [
+            "Counter-Strike",
+            3374.9
+        ],
+        [
+            "PUBG: BATTLEGROUNDS",
+            342.6
+        ],
+        [
+            "RISK: Global Domination",
+            62.3
+        ],
+        [
+            "Dead by Daylight",
+            52.3
+        ],
+        [
+            "Brotato",
+            44.8
+        ],
+        [
+            "Worms Armageddon",
+            41.7
+        ],
+        [
+            "The Walking Dead",
+            34.8
+        ],
+        [
+            "DayZ",
+            32.7
+        ],
+        [
+            "Age of Empires II (2013)",
+            30.3
+        ],
+        [
+            "Tomb Raider",
+            30.0
+        ],
+        [
+            "South Park\u2122: The Stick of Truth\u2122",
+            27.4
+        ],
+        [
+            "Warhammer 40,000: Space Marine - Anniversary Edition",
+            23.2
+        ],
+        [
+            "Half-Life",
+            22.9
+        ],
+        [
+            "FINAL FANTASY VIII",
+            21.2
+        ],
+        [
+            "FINAL FANTASY VIII - REMASTERED",
+            18.7
+        ],
+        [
+            "Stumble Guys",
+            17.5
+        ],
+        [
+            "Fallout 4",
+            16.3
+        ],
+        [
+            "Duke Nukem Forever",
+            15.0
+        ],
+        [
+            "Left 4 Dead 2",
+            13.0
+        ],
+        [
+            "Killing Floor",
+            11.6
+        ],
+        [
+            "Dead Island Definitive Edition",
+            10.3
+        ],
+        [
+            "No Man's Sky",
+            10.1
+        ],
+        [
+            "Oddworld: Abe's Oddysee",
+            9.7
+        ],
+        [
+            "60 Seconds!",
+            9.3
+        ],
+        [
+            "Pixel Puzzles: UndeadZ",
+            9.3
+        ],
+        [
+            "PAYDAY: The Heist",
+            8.7
+        ],
+        [
+            "The Elder Scrolls V: Skyrim",
+            8.5
+        ],
+        [
+            "Golf With Your Friends",
+            8.0
+        ],
+        [
+            "Moto Racer  4",
+            6.8
+        ],
+        [
+            "Blackbay Asylum",
+            6.7
+        ],
+        [
+            "RAGE",
+            6.7
+        ],
+        [
+            "Street Racing Syndicate",
+            6.7
+        ],
+        [
+            "Shadow Warrior",
+            6.6
+        ],
+        [
+            "Normality",
+            6.6
+        ],
+        [
+            "BioShock 2 Remastered",
+            6.5
+        ],
+        [
+            "Pixel Puzzles: Japan",
+            6.4
+        ],
+        [
+            "Sniper Elite V2",
+            6.3
+        ],
+        [
+            "Psychonauts",
+            6.3
+        ],
+        [
+            "Starpoint Gemini 2",
+            6.3
+        ],
+        [
+            "PAYDAY 2",
+            6.2
+        ],
+        [
+            "Grounded",
+            6.2
+        ],
+        [
+            "Half-Life 2",
+            6.2
+        ],
+        [
+            "Jotun: Valhalla Edition",
+            6.1
+        ],
+        [
+            "Mirage: Arcane Warfare",
+            6.1
+        ],
+        [
+            "Back to Bed",
+            5.9
+        ],
+        [
+            "Worms Reloaded",
+            5.8
+        ],
+        [
+            "Half-Life: Alyx",
+            5.7
+        ],
+        [
+            "Batman: Arkham City GOTY",
+            5.5
+        ],
+        [
+            "Alex Kidd in Miracle World DX",
+            5.4
+        ],
+        [
+            "Br\u00fctal Legend",
+            5.2
+        ],
+        [
+            "Counter-Strike: Source",
+            5.1
+        ],
+        [
+            "Pixel Puzzles 2: Anime",
+            5.1
+        ],
+        [
+            "Two Point Hospital",
+            4.5
+        ],
+        [
+            "Dead Bits",
+            4.3
+        ],
+        [
+            "Stronghold Crusader HD",
+            4.3
+        ],
+        [
+            "Sixtieth Kilometer",
+            4.2
+        ],
+        [
+            "South Park The Fractured But Whole",
+            4.1
+        ],
+        [
+            "Google Earth VR",
+            4.1
+        ],
+        [
+            "TEKKEN 7",
+            3.9
+        ],
+        [
+            "Dying Light",
+            3.8
+        ],
+        [
+            "Guns of Icarus Online",
+            3.7
+        ],
+        [
+            "Rise of the Tomb Raider",
+            3.7
+        ],
+        [
+            "Gold Rush! Anniversary",
+            3.6
+        ],
+        [
+            "Zombie Bowl-O-Rama",
+            3.6
+        ],
+        [
+            "Lost Planet: Extreme Condition",
+            3.5
+        ],
+        [
+            "Frederic: Resurrection of Music",
+            3.5
+        ],
+        [
+            "Dota 2",
+            3.3
+        ],
+        [
+            "RADical ROACH Remastered",
+            3.2
+        ],
+        [
+            "Between Me and The Night",
+            3.2
+        ],
+        [
+            "Pixel Puzzles 2: Birds",
+            3.2
+        ],
+        [
+            "SNOWFLAKE TATTOO",
+            3.1
+        ],
+        [
+            "Sonic Mania",
+            3.0
+        ],
+        [
+            "Space Farmers",
+            3.0
+        ],
+        [
+            "Borderlands 2",
+            3.0
+        ],
+        [
+            "Euro Truck Simulator 2",
+            3.0
+        ],
+        [
+            "Contagion",
+            2.9
+        ],
+        [
+            "Incoming Forces",
+            2.9
+        ],
+        [
+            "N.P.P.D. RUSH - The milk of Ultra violet",
+            2.9
+        ],
+        [
+            "Pressured",
+            2.9
+        ],
+        [
+            "Pester",
+            2.9
+        ],
+        [
+            "Hostile Waters: Antaeus Rising",
+            2.9
+        ],
+        [
+            "SUPERHOT VR",
+            2.9
+        ],
+        [
+            "Outlast",
+            2.8
+        ],
+        [
+            "Pixel Puzzles 2: Space",
+            2.8
+        ],
+        [
+            "How to Survive",
+            2.7
+        ],
+        [
+            "Company of Heroes",
+            2.7
+        ],
+        [
+            "F.E.A.R. 3",
+            2.7
+        ],
+        [
+            "Platypus II",
+            2.7
+        ],
+        [
+            "Arma 2: Operation Arrowhead",
+            2.7
+        ],
+        [
+            "Ampu-Tea",
+            2.7
+        ],
+        [
+            "Constructor Plus",
+            2.7
+        ],
+        [
+            "Runestone Keeper",
+            2.6
+        ],
+        [
+            "Overcast - Walden and the Werewolf",
+            2.6
+        ],
+        [
+            "Speed Kills",
+            2.6
+        ],
+        [
+            "Slipstream 5000",
+            2.6
+        ],
+        [
+            "Purgatory",
+            2.6
+        ],
+        [
+            "Portal 2",
+            2.5
+        ],
+        [
+            "POSTAL 2",
+            2.5
+        ],
+        [
+            "Saviors",
+            2.5
+        ],
+        [
+            "Selfie: Sisters of the Amniotic Lens",
+            2.5
+        ],
+        [
+            "Showtime!",
+            2.5
+        ],
+        [
+            "Plazma Being",
+            2.5
+        ],
+        [
+            "Red Faction: Guerrilla Steam Edition",
+            2.5
+        ],
+        [
+            "Shadowgrounds",
+            2.5
+        ],
+        [
+            "Space Pilgrim Episode I: Alpha Centauri",
+            2.5
+        ],
+        [
+            "Spin Rush",
+            2.5
+        ],
+        [
+            "Grand Theft Auto V",
+            2.5
+        ],
+        [
+            "Slash It",
+            2.5
+        ],
+        [
+            "Tropico 4",
+            2.5
+        ],
+        [
+            "Steam Heroes",
+            2.5
+        ],
+        [
+            "Resident Evil 7 Biohazard",
+            2.5
+        ],
+        [
+            "ZOMBI",
+            2.5
+        ],
+        [
+            "Anomaly Warzone Earth",
+            2.4
+        ],
+        [
+            "GemCraft - Chasing Shadows",
+            2.4
+        ],
+        [
+            "Kingdom: Classic",
+            2.4
+        ],
+        [
+            "The Bureau: XCOM Declassified",
+            2.4
+        ],
+        [
+            "Bloop Reloaded",
+            2.4
+        ],
+        [
+            "Killer is Dead",
+            2.4
+        ],
+        [
+            "Sanctum 2",
+            2.4
+        ],
+        [
+            "Trolley Gold",
+            2.4
+        ],
+        [
+            "Blockstorm",
+            2.4
+        ],
+        [
+            "Company of Heroes 2",
+            2.4
+        ],
+        [
+            "ENDLESS\u2122 Space - Definitive Edition",
+            2.4
+        ],
+        [
+            "Gun Metal",
+            2.4
+        ],
+        [
+            "Heckabomb",
+            2.4
+        ],
+        [
+            "Hero Defense",
+            2.4
+        ],
+        [
+            "Horizon Shift",
+            2.4
+        ],
+        [
+            "Gold Rush! Classic",
+            2.4
+        ],
+        [
+            "Memories of a Vagabond",
+            2.4
+        ],
+        [
+            "Minion Masters",
+            2.4
+        ],
+        [
+            "Neon Space 2",
+            2.4
+        ],
+        [
+            "Omerta - City of Gangsters",
+            2.4
+        ],
+        [
+            "Cavern Escape",
+            2.4
+        ],
+        [
+            "GEARCRACK Arena",
+            2.4
+        ],
+        [
+            "Ionball 2 : Ionstorm",
+            2.4
+        ],
+        [
+            "Luna Sky",
+            2.4
+        ],
+        [
+            "Melissa K. and the Heart of Gold Collector's Edition",
+            2.4
+        ],
+        [
+            "Neon Prism",
+            2.4
+        ],
+        [
+            "Nosferatu: The Wrath of Malachi",
+            2.4
+        ],
+        [
+            "TAIKU MANSION",
+            2.4
+        ],
+        [
+            "Total War: NAPOLEON - Definitive Edition",
+            2.3
+        ],
+        [
+            "Serious Sam VR: The Last Hope",
+            2.3
+        ],
+        [
+            "ShellShock Live",
+            2.3
+        ],
+        [
+            "Fly and Destroy",
+            2.3
+        ],
+        [
+            "Call of Duty: Black Ops",
+            2.2
+        ],
+        [
+            "BEEP",
+            2.2
+        ],
+        [
+            "Chivalry: Medieval Warfare",
+            2.2
+        ],
+        [
+            "BioShock Infinite",
+            2.2
+        ],
+        [
+            "Cataegis : The White Wind",
+            2.2
+        ],
+        [
+            "Crystals of Time",
+            2.2
+        ],
+        [
+            "Cube Runner",
+            2.2
+        ],
+        [
+            "Dead Island: Epidemic",
+            2.2
+        ],
+        [
+            "12 Labours of Hercules II: The Cretan Bull",
+            2.2
+        ],
+        [
+            "Agent Awesome",
+            2.2
+        ],
+        [
+            "Alan Wake",
+            2.2
+        ],
+        [
+            "Batman: Arkham Asylum GOTY Edition",
+            2.2
+        ],
+        [
+            "Battleplan: American Civil War",
+            2.2
+        ],
+        [
+            "Bedlam",
+            2.2
+        ],
+        [
+            "BioShock Remastered",
+            2.2
+        ],
+        [
+            "Chompy Chomp Chomp",
+            2.2
+        ],
+        [
+            "Commando Jack",
+            2.2
+        ],
+        [
+            "DarkEnd",
+            2.2
+        ],
+        [
+            "Day of Defeat: Source",
+            2.2
+        ],
+        [
+            "Canyon Capers",
+            2.1
+        ],
+        [
+            "Three Dead Zed",
+            2.1
+        ],
+        [
+            "Hitman: Absolution",
+            2.1
+        ],
+        [
+            "Serious Sam 3: BFE",
+            2.1
+        ],
+        [
+            "Vampire of the Sands",
+            2.1
+        ],
+        [
+            "Dead Island Riptide Definitive Edition",
+            2.1
+        ],
+        [
+            "Demonicon",
+            2.1
+        ],
+        [
+            "The 39 Steps",
+            2.1
+        ],
+        [
+            "The Dark Eye: Chains of Satinav",
+            2.1
+        ],
+        [
+            "The Dark Stone from Mebara",
+            2.1
+        ],
+        [
+            "Total War: SHOGUN 2",
+            2.1
+        ],
+        [
+            "Despair",
+            2.1
+        ],
+        [
+            "Super Killer Hornet: Resurrection",
+            2.1
+        ],
+        [
+            "The Culling Of The Cows",
+            2.1
+        ],
+        [
+            "Total War: ROME II - Emperor Edition",
+            2.1
+        ],
+        [
+            "Uriel's Chasm",
+            2.1
+        ],
+        [
+            "Uriel's Chasm 2: \u05d0\u05ea",
+            2.1
+        ],
+        [
+            "60 Seconds! Reatomized",
+            2.0
+        ],
+        [
+            "DiRT 3 Complete Edition",
+            2.0
+        ],
+        [
+            "Duke of Alpha Centauri",
+            2.0
+        ],
+        [
+            "Project Zomboid",
+            1.93
+        ],
+        [
+            "The Walking Dead: Season Two",
+            1.9
+        ],
+        [
+            "Yet Another Zombie Defense",
+            1.83
+        ],
+        [
+            "Metro 2033",
+            1.78
+        ],
+        [
+            "Fallout: New Vegas",
+            1.7
+        ],
+        [
+            "Worms Clan Wars",
+            1.7
+        ],
+        [
+            "Marvel Heroes Omega",
+            1.5
+        ],
+        [
+            "Zup! S",
+            1.43
+        ],
+        [
+            "The Expendabros",
+            1.33
+        ],
+        [
+            "The Walking Dead: Saints & Sinners",
+            1.25
+        ],
+        [
+            "Serious Sam Double D XXL",
+            1.12
+        ],
+        [
+            "Defy Gravity",
+            1.07
+        ],
+        [
+            "Dungeons 3",
+            1.03
+        ],
+        [
+            "Serious Sam Fusion 2017 (beta)",
+            0.98
+        ],
+        [
+            "Choplifter HD",
+            0.97
+        ],
+        [
+            "Sven Co-op",
+            0.87
+        ],
+        [
+            "Dead Island Retro Revenge",
+            0.82
+        ],
+        [
+            "Yu-Gi-Oh! Duel Links",
+            0.8
+        ],
+        [
+            "Aliens: Colonial Marines",
+            0.75
+        ],
+        [
+            "THE FINALS",
+            0.68
+        ],
+        [
+            "F.E.A.R. Online",
+            0.67
+        ],
+        [
+            "Fallout",
+            0.65
+        ],
+        [
+            "Spec Ops: The Line",
+            0.65
+        ],
+        [
+            "Ben and Ed - Blood Party",
+            0.55
+        ],
+        [
+            "Back 4 Blood",
+            0.5
+        ],
+        [
+            "Homefront",
+            0.5
+        ],
+        [
+            "Call of Duty\u00ae",
+            0.42
+        ],
+        [
+            "Lara Croft and the Guardian of Light",
+            0.37
+        ],
+        [
+            "Tomb Raider I",
+            0.33
+        ],
+        [
+            "ARK: Survival Evolved",
+            0.27
+        ],
+        [
+            "Zoo 2: Animal Park",
+            0.27
+        ],
+        [
+            "Fallout Shelter",
+            0.25
+        ],
+        [
+            "Lone Survivor: The Director's Cut",
+            0.25
+        ],
+        [
+            "Last Day of June",
+            0.23
+        ],
+        [
+            "Mafia",
+            0.23
+        ],
+        [
+            "Stronghold Crusader Extreme HD",
+            0.23
+        ],
+        [
+            "HITMAN\u2122 2",
+            0.22
+        ],
+        [
+            "Arma 2: DayZ Mod",
+            0.18
+        ],
+        [
+            "AX:EL",
+            0.18
+        ],
+        [
+            "RollerCoaster Tycoon 2: Triple Thrill Pack",
+            0.17
+        ],
+        [
+            "Chicken Shoot 2",
+            0.12
+        ],
+        [
+            "Soundpad",
+            0.12
+        ],
+        [
+            "No More Room in Hell",
+            0.1
+        ],
+        [
+            "Bloons TD Battles 2",
+            0.07
+        ],
+        [
+            "BioShock",
+            0.05
+        ],
+        [
+            "Call of Duty: Black Ops - Multiplayer",
+            0.05
+        ],
+        [
+            "Ultimate Chicken Horse",
+            0.05
+        ],
+        [
+            "Brawlhalla",
+            0.03
+        ],
+        [
+            "Company of Heroes: Opposing Fronts",
+            0.03
+        ],
+        [
+            "Arma 2",
+            0.02
+        ],
+        [
+            "Chicken Shoot Gold",
+            0.02
+        ],
+        [
+            "Counter-Strike: Condition Zero Deleted Scenes",
+            0.02
+        ],
+        [
+            "Fractured Space",
+            0.02
+        ],
+        [
+            "Half-Life 2: Deathmatch",
+            0.02
+        ],
+        [
+            "Left 4 Dead",
+            0.02
+        ],
+        [
+            "Need for Speed\u2122 Heat",
+            0.02
+        ],
+        [
+            "Tetris for Two",
+            0.02
+        ]
     ]
 }

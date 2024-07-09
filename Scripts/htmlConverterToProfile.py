@@ -119,7 +119,7 @@ def combine_libraries(libraries_dir, output_file):
     combined_library.to_csv(output_file, index=False)
     print(f"Die Benutzerbibliotheken wurden erfolgreich kombiniert und als {output_file} gespeichert.")
 
-# Step 4: Creating User Profiles
+# Step 4: Creating or Updating User Profiles
 def safe_split(data, delimiter=', '):
     if isinstance(data, str):
         return data.split(delimiter)
@@ -130,34 +130,52 @@ def safe_eval(data):
         return eval(data)
     return {}
 
-def create_user_profiles(combined_library_path, user_profiles_folder):
+def create_or_update_user_profiles(combined_library_path, user_profiles_folder):
     combined_library = pd.read_csv(combined_library_path)
     combined_library.drop_duplicates(inplace=True)
     if not os.path.exists(user_profiles_folder):
         os.makedirs(user_profiles_folder)
-    user_profiles = {}
+    
     for user in combined_library['Benutzer'].unique():
         user_profile_path = os.path.join(user_profiles_folder, f"{user}.json")
+        
         if os.path.exists(user_profile_path):
-            continue
+            with open(user_profile_path, 'r') as profile_file:
+                profile = json.load(profile_file)
+        else:
+            profile = {'Genres': {}, 'Tags': {}, 'OwnedGames': []}
+        
         user_data = combined_library[combined_library['Benutzer'] == user]
-        profile = {'Genres': {}, 'Tags': {}, 'OwnedGames': []}
+        
         for _, row in user_data.iterrows():
             genres = safe_split(row['Genre'])
             tags = safe_eval(row['Tags'])
-            profile['OwnedGames'].append(row['Spiel'])
+            game = row['Spiel']
+            playtime = row['SpielzeitInStunden']
+            
+            if game not in [g[0] for g in profile['OwnedGames']]:
+                profile['OwnedGames'].append([game, playtime])
+            else:
+                for owned_game in profile['OwnedGames']:
+                    if owned_game[0] == game:
+                        owned_game[1] = max(owned_game[1], playtime)
+                        break
+            
             for genre in genres:
                 if genre not in profile['Genres']:
                     profile['Genres'][genre] = 0
-                profile['Genres'][genre] += row['SpielzeitInStunden']
-            for tag, count in tags.items():
-                if tag not in profile['Tags']:
-                    profile['Tags'][tag] = 0
-                profile['Tags'][tag] += count
-        user_profiles[user] = profile
+                profile['Genres'][genre] += playtime
+            
+            if tags:
+                for tag, count in tags.items():
+                    if tag not in profile['Tags']:
+                        profile['Tags'][tag] = 0
+                    profile['Tags'][tag] += playtime
+        
         with open(user_profile_path, 'w') as profile_file:
             json.dump(profile, profile_file, indent=4)
-    print("Benutzerprofile wurden erfolgreich erstellt und gespeichert.")
+    
+    print("User profiles have been successfully created or updated.")
 
 def main():
     # Step 1: Parse HTML to CSV
@@ -175,9 +193,9 @@ def main():
     combined_library_path = "./combined_libraries.csv"
     combine_libraries(library_output_folder, combined_library_path)
 
-    # Step 4: Create User Profiles
+    # Step 4: Create or Update User Profiles
     user_profiles_folder = "./userProfiles"
-    create_user_profiles(combined_library_path, user_profiles_folder)
+    create_or_update_user_profiles(combined_library_path, user_profiles_folder)
 
 if __name__ == "__main__":
     main()
