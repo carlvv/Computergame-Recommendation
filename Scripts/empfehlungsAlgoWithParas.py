@@ -1,17 +1,22 @@
 import os
 import json
 import pandas as pd
+from sklearn.model_selection import train_test_split
+from sklearn.neighbors import NearestNeighbors
 from sklearn.metrics.pairwise import cosine_similarity
+from sklearn import preprocessing
 
 # Parameters
-USER_PROFILE_FILENAME = "Carlos.json"  # profile name
+USER_PROFILE_FILENAME = "Inkompetent.json"  # profile name
 NUM_RECOMMENDATIONS = 15
-POPULARITY_FILTER = 'popular'  # Options: 'all', 'popular', 'niche'
+POPULARITY_FILTER = 'all'  # Options: 'all', 'popular', 'niche'
 POPULAR_THRESHOLD = 1000000  # Number of owners to classify as popular
 REVIEW_RATIO_THRESHOLD = 0.85  # Minimum positive review ratio required
-LIBRARY_FOLDER = "./userProfiles"
-GAME_CATALOG_PATH = "./game_catalog_extended.csv"
-COMBINED_LIBRARY_PATH = "./combined_libraries.csv"
+LIBRARY_FOLDER = "../Profiles"
+GAME_CATALOG_PATH = "../data/game_catalog_extended.csv"
+COMBINED_LIBRARY_PATH = "../data/combined_libraries.csv"
+ALL_GENRES_CSV = "../data/genres.csv"
+ALL_TAG_CSV = "../data/tags.csv"
 
 # Load the game catalog
 game_catalog = pd.read_csv(GAME_CATALOG_PATH)
@@ -28,20 +33,32 @@ def convert_owners_to_numeric(owners_str):
 game_catalog['owners'] = game_catalog['owners'].apply(convert_owners_to_numeric)
 
 # Function to calculate cosine similarity
-def calculate_similarity(profile_tags, game_tags):
+def calculate_similarity(profile_tags, game_tags, profile_genres, game_genres):
     profile_vector = []
     game_vector = []
     
     # Collect all unique tags in both sets
     all_tags = list(set(profile_tags.keys()).union(set(game_tags.keys())))
-    
+    all_genres = list(set(profile_genres.keys()).union(game_genres))
+    #print(all_genres)
     # Create vectors
     for tag in all_tags:
         profile_vector.append(profile_tags.get(tag, 0))
         game_vector.append(game_tags.get(tag, 0))
-    
+    for genre in all_genres:
+        profile_vector.append(profile_genres.get(tag, 0))
+        if genre in game_genres:
+             game_vector.append(20)
+        else:    
+            game_vector.append(0)
+
+    #print(game_vector)
+    #print(profile_vector)
+    profile_vector  = preprocessing.normalize([profile_vector])[0]
+    game_vector =preprocessing.normalize([game_vector])[0]
     # Calculate cosine similarity
     return cosine_similarity([profile_vector], [game_vector])[0][0]
+
 
 # Function to perform collaborative filtering and determine cluster
 def collaborative_filtering(user_profile_name, combined_library):
@@ -79,33 +96,86 @@ def recommend_games(user_profile_path, game_catalog, combined_library, num_recom
     recommendations = []
     total_games = 0
     skipped_games = 0
-    
+    all_tags = pd.read_csv(ALL_TAG_CSV)
+    all_genres = pd.read_csv(ALL_GENRES_CSV)
     owned_games = set(game[0] for game in user_profile.get('OwnedGames', []))
-    
+    vector_Array = []
+    filtered_game_catalog = game_catalog
+
+
     for _, game in game_catalog.iterrows():
         total_games += 1
         if game['name'] in owned_games:
             continue
         try:
             game_tags = eval(game['tags'])  # Convert the string back to a dictionary
+            
             if not isinstance(game_tags, dict):
                 raise ValueError("Game tags is not a dictionary.")
         except Exception as e:
+            filtered_game_catalog = game_catalog.drop([_])
+            #vector_Array.append([0]* (all_genres.shape[0]+all_tags.shape[0]))
             skipped_games += 1
             continue
-        
-        similarity = calculate_similarity(user_profile['Tags'], game_tags)
+        try:
+            game_genres = set((game['genre']).strip().split(","))  # Convert the string back to a dictionary
+        except Exception as e:
+            filtered_game_catalog = game_catalog.drop([_])
+            #vector_Array.append([0]* (all_genres.shape[0]+all_tags.shape[0]))
+            skipped_games += 1
+            continue
+        game_vector = []    
+        for genre in all_genres['Genres']:
+            if genre in  game_genres:
+                game_vector.append(20)
+            else:
+                game_vector.append(0)    
+        for tag in all_tags['Tags']:
+            game_vector.append(game_tags.get(tag, 0))
+
+        game_vector  = preprocessing.normalize([game_vector])[0]
+
+
+        similarity = calculate_similarity(user_profile['Tags'], game_tags, user_profile['Genres'], game_genres)
         positive_ratio = game['positive'] / (game['positive'] + game['negative']) if (game['positive'] + game['negative']) > 0 else 0
-        
+        vector_Array.append(game_vector)
+
         # Apply review ratio filter
         if positive_ratio < review_ratio_threshold:
+            #filtered_game_catalog = game_catalog.drop([_])
+            #vector_Array.append([0]* (all_genres.shape[0]+all_tags.shape[0]))
             continue
-        
         recommendations.append((game['name'], similarity, game['owners'], game['genre'], positive_ratio))
     
+
+
     # Sort the recommendations by similarity
+    vecotrized_df = pd.DataFrame(vector_Array)
+    print(vecotrized_df)
+    user_Vector = []    
+    for genre in all_genres['Genres']:
+        user_Vector.append(user_profile['Genres'].get(tag, 0))
+    for tag in all_tags['Tags']:
+        user_Vector.append(user_profile['Tags'].get(tag, 0))
+
+    user_Vector = preprocessing.normalize([user_Vector])[0]
+
     recommendations.sort(key=lambda x: x[1], reverse=True)
-    
+    model = NearestNeighbors(n_neighbors=11, metric='cosine', algorithm='brute').fit(vecotrized_df)
+    print (model)
+    print("creating_Model...")
+    vg_distances, vg_indices = model.kneighbors(vecotrized_df)
+
+    print("List of indexes and distances for the first 5 games:\n")
+    print(vg_indices[:5], "\n")
+    print(vg_distances[:5])
+
+    for game in owned_games:
+        game_idx = game_catalog.query('name == @game').index
+        for idx in game_idx:
+            nearNeighbours =  vg_indices[idx-2]
+            print(nearNeighbours)
+
     # Apply popularity filter
     if popularity_filter == 'popular':
         recommendations = [rec for rec in recommendations if rec[2] > POPULAR_THRESHOLD]
@@ -130,16 +200,14 @@ def recommend_games(user_profile_path, game_catalog, combined_library, num_recom
     
     print(f"Total games processed: {total_games}")
     print(f"Games skipped due to invalid tags: {skipped_games}")
-    
+
     return combined_recommendations[:num_recommendations], cluster_genre
 
 # Directory containing user profiles
 user_profiles_folder = LIBRARY_FOLDER
 profiles = os.listdir(user_profiles_folder)
-
 # Load combined library
 combined_library = pd.read_csv(COMBINED_LIBRARY_PATH)
-
 # Use an existing profile
 user_profile_path = os.path.join(user_profiles_folder, USER_PROFILE_FILENAME)
 
